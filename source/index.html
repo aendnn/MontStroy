@@ -15,8 +15,16 @@
             <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
         </a>
         <nav class="page-header__nav main-nav">
-          <button class="main-nav__toggle" type="button"></button>
-          <ul class="main-nav__list site-nav">
+          <button class="main-nav__toggle" type="button">
+            Меню
+            <span class="main-nav__toggle-line"></span>
+          </button>
+          <ul class="main-nav__list site-nav site-nav--nojs site-nav--closed">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">
+                Главная
+              </a>
+            </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="#">
                 Услуги
@@ -41,10 +49,11 @@
         </nav>
       </div>
       <div class="page-header__connection connection">
-        <a class="connection__phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
-        <a class="connection__feedback btn" href="#">Обратная связь</a>
+        <a class="connection__phone connection__phone--hidden" href="tel:+74954526723">+7 (495) 452-67-23</a>
+        <a class="connection__feedback connection__feedback--hidden" href="#">Обратная связь</a>
       </div>
     </div>
   </header>
+<script src="js/script.js"></script>
 </body>
 </html>
