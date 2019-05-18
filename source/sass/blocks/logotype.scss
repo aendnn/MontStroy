@@ -1,0 +1,8 @@
+.logotype__img {
+  display: block;
+
+  @media (max-width: $tabletWidth) {
+    width: 86px;
+    height: 37px;
+  }
+}

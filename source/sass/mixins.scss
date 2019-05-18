@@ -8,3 +8,9 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
