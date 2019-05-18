@@ -4,11 +4,11 @@
 
   @media (max-width: $tabletWidth) {
     position: relative;
-    padding: 7px 0;
+    padding: 8px 0;
   }
 
-  @media (max-width: $tabletWidth) {
-    padding: 8px 0;
+  @media (max-width: $mobileWidth) {
+    padding: 7px 0;
   }
 }
 
@@ -46,7 +46,7 @@
   @media (max-width: $tabletWidth) {
     width: auto;
     height: auto;
-    margin-right: 40px;
+    margin-right: 38px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -58,11 +58,13 @@
   width: 64.9%;
 
   @media (max-width: $tabletWidth) {
-    width: 30px;
+    width: 32px;
+    height: 22px;
   }
 
   @media (max-width: $mobileWidth) {
-    width: auto;
+    width: 18px;
+    height: 14px;
   }
 }
 

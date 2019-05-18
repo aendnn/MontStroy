@@ -1,0 +1,20 @@
+.btn {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondaryColor;
+  background-color: $thirdColor;
+  border: 2px solid $thirdColor;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 4.75px 0.25px rgba(0, 255, 215, 0.6);
+  }
+
+  &--feedback {
+    font-weight: 500;
+    text-transform: none;
+  }
+}
