@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
     <header class="page-header">
       <div class="page-header__container container">
         <div class="page-header__wrap">
@@ -50,11 +53,65 @@
         </div>
         <div class="page-header__connection connection">
           <a class="connection__phone connection__phone--hidden" href="tel:+74954526723">+7 (495) 452-67-23</a>
-          <a class="btn btn--feedback connection__feedback connection__feedback--hidden" href="#feedback">Обратная связь</a>
+          <a class="btn btn--feedback btn--hidden connection__feedback" href="#feedback">Обратная связь</a>
         </div>
       </div>
     </header>
+    <main class="page-main">
+      <section class="banner">
+        <div class="banner__wrap">
+          <div class="banner__container container">
+            <div class="banner__wrap-top">
+              <h1 class="banner__title">Строительно-монтажные
+                работы</h1>
+              <p class="banner__about banner__about--hidden">Работаем на российском рынке с&nbsp;<span class="banner__desc-year">1992</span> года</p>
+              <p class="banner__desc">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<span class="banner__desc-year banner__desc-year--hidden">1992</span> года,
+                и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных
+                и пуско-наладочных работ по&nbsp;электроснабжению зданий и&nbsp;сооружений.</p>
+              <div class="banner__buttons">
+                <a class="btn banner__btn" href="#">Наши услуги</a>
+                <a class="btn btn--transparent banner__btn" href="#">Связаться с нами</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner__features">
+          <div class="container">
+            <ul class="banner__features-list features">
+              <li class="features__item">
+                <svg class="features__icon" width="62" height="64">
+                  <use xlink:href="img/sprite_auto.svg#icon-like"></use>
+                </svg>
+                <p class="features__desc">Гарантированное высокое<br>
+                  качество продукции</p>
+              </li>
+              <li class="features__item features__item--active">
+                <svg class="features__icon" width="74" height="49">
+                  <use xlink:href="img/sprite_auto.svg#icon-handshake"></use>
+                </svg>
+                <p class="features__desc">Исполнение всех<br>
+                  сроков и обязательств</p>
+              </li>
+              <li class="features__item">
+                <svg class="features__icon" width="70" height="69">
+                  <use xlink:href="img/sprite_auto.svg#icon-settings"></use>
+                </svg>
+                <p class="features__desc">Собственная&nbsp;производственная<br>
+                  база</p>
+              </li>
+            </ul>
+            <div class="features__toggles toggles toggles--hidden">
+              <button class="toggles__item" type="button"></button>
+              <button class="toggles__item toggles__item--active" type="button"></button>
+              <button class="toggles__item" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/script.js">
     </script>
+    <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
   </body>
 </html>
