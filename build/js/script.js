@@ -38,3 +38,6 @@ for (var i = 0; i < linkCon.length; i++) {
     }
   }, false);
 }
+
+
+svg4everybody();

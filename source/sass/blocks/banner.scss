@@ -1,0 +1,242 @@
+.banner {
+  position: relative;
+  padding-bottom: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/header-bg-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    &::before {
+      background-image: url("../img/header-bg-desk@2x.jpg");
+    }
+  }
+
+  @media (min-width: 1920px) {
+    &::before {
+      background-position: 0 -97px;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    &::before {
+      display: none;
+    }
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.banner__wrap {
+  margin-bottom: 110px;
+  padding-top: 155px;
+
+  @media (max-width: $tabletWidth) {
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 125px;
+    padding-bottom: 130px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/header-bg-tabl.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      &::before {
+        background-image: url("../img/header-bg-tabl@2x.jpg");
+      }
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-bottom: 0;
+
+    &::before {
+      top: -50px;
+      max-height: 515px;
+      background-image: url("../img/header-bg-mob.jpg");
+    }
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      &::before {
+        background-image: url("../img/header-bg-mob@2x.jpg");
+      }
+    }
+  }
+}
+
+.banner__container {
+  @media (max-width: $tabletWidth) {
+    padding: 0 42px;
+  }
+
+
+  @media (max-width: $mobileWidth) {
+    padding: 0;
+  }
+}
+
+.banner__wrap-top {
+  @media (max-width: $tabletWidth) {
+    padding-left: 20px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.banner__title {
+  @include text-reset;
+  margin-bottom: 22px;
+  font-family: $raleway;
+  font-size: 72px;
+  line-height: 85px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 17px;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+.banner__desc {
+  @include text-reset;
+  width: 86%;
+  margin-bottom: 55px;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+
+  @media (max-width: $tabletWidth) {
+    width: 95%;
+    margin-bottom: 82px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    order: 2;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 12%;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondaryColor;
+  }
+}
+
+.banner__desc-year {
+  color: $thirdColor;
+
+  @media (max-width: $mobileWidth) {
+    &--hidden {
+      color: $secondaryColor;
+    }
+  }
+}
+
+
+.banner__buttons {
+  @include space-between;
+  width: 53.4%;
+
+  @media (max-width: $tabletWidth) {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    order: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 55px;
+    padding: 0;
+  }
+}
+
+.banner__btn {
+  min-width: 48%;
+
+  @media (max-width: $mobileWidth) {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.banner__about {
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $mobileWidth) {
+    @include text-reset;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+    &--hidden {
+      display: block;
+    }
+  }
+}
+
+.banner__features-list {
+  @include list-reset;
+
+  @media (max-width: $tabletWidth) {
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    justify-content: center;
+  }
+}

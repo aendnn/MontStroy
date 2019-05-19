@@ -1,0 +1,41 @@
+.toggles {
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $tabletWidth) {
+    @include space-between;
+    align-items: center;
+  }
+}
+
+.toggles__item {
+  @include text-reset;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &--active {
+    background-color: $thirdColor;
+  }
+
+  &:hover:not(.toggles__item--active),
+  &:focus:not(.toggles__item--active) {
+    background-color: #d6d6d6;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 6px;
+    height: 6px;
+
+    &--active {
+      width: 8px;
+      height: 8px;
+      border-color: $thirdColor;
+    }
+  }
+}

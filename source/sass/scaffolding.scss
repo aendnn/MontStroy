@@ -17,6 +17,9 @@ img {
   height: auto;
 }
 
+::selection {
+  background-color: $thirdColor;
+}
 
 body {
   @include text-reset;

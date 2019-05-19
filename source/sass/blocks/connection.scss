@@ -34,10 +34,4 @@
   display: block;
   width: 191px;
   min-height: 44px;
-
-  @media (max-width: $tabletWidth) {
-    &--hidden {
-      display: none;
-    }
-  }
 }
