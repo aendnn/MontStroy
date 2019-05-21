@@ -4,13 +4,13 @@
   align-items: baseline;
 
   @media (max-width: $tabletWidth) {
-    padding-top: 43px;
+    padding-top: 42px;
   }
 
   @media (max-width: $tabletWidth) {
     width: 99%;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     justify-content: center;
     align-items: center;
   }
@@ -48,7 +48,7 @@
     &--active {
       width: 38%;
       padding: 0 15px;
-      padding-top: 50px;
+      padding-top: 55px;
       padding-bottom: 42px;
       box-shadow: $shadowItemActive;
     }

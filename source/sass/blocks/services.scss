@@ -3,8 +3,6 @@
   padding-bottom: 65px;
 
   @media (max-width: $tabletWidth) {
-    overflow: hidden;
-    min-height: 535px;
     padding-top: 42px;
     padding-bottom: 75px;
   }
@@ -12,6 +10,7 @@
   @media (max-width: $mobileWidth) {
     min-height: auto;
     flex-direction: column;
+    padding-top: 48px;
     padding-bottom: 55px;
   }
 }
@@ -19,6 +18,10 @@
 .services__title {
   @include text-reset;
   margin-bottom: 21px;
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 24px;
+  }
 
   @media (max-width: $mobileWidth) {
     padding-left: 20px;
@@ -84,6 +87,7 @@
 
   @media (max-width: $tabletWidth) {
     display: flex;
+    flex-direction: column;
     min-height: auto;
     width: 100%;
     padding: 0;
@@ -108,8 +112,14 @@
     width: 100%;
     flex-direction: column;
 
-    &--active .services__item-title {
-      background-color: #e8e8e8;
+    &--active {
+      .services__item-title {
+        background-color: #e8e8e8;
+      }
+
+      .services__links {
+        min-height: auto;
+      }
     }
   }
 }
@@ -129,12 +139,12 @@
   @media (max-width: $tabletWidth) {
     @include space-between;
     position: relative;
-    min-height: 56px;
+    min-height: 50px;
     flex-wrap: nowrap;
     margin-bottom: 0;
     align-items: center;
     width: 100%;
-    padding: 12px 20px;
+    padding: 5px 20px;
     background-color: #f4f4f4;
     font-size: 14px;
     line-height: 19px;
@@ -159,7 +169,7 @@
 .services__item-link {
   display: inline-block;
   width: 95%;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   font-size: 13px;
   line-height: 16px;
   color: #303030;
@@ -177,10 +187,10 @@
     position: relative;
     width: 100%;
     margin-bottom: 0;
-    padding: 10px 20px;
     background-color: #f4f4f4;
+    padding: 12px 20px;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 16px;
     font-weight: 400;
     color: $secondaryColor;
     border: 1px solid transparent;
@@ -201,7 +211,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 12px;
     background-color: $mainColor;
 
@@ -220,6 +230,11 @@
     min-width: 8px;
     margin-left: auto;
     fill: #aeadad;
+
+    &:hover,
+    &:focus {
+      fill: rgba(0, 0, 0, 0.7);
+    }
   }
 }
 
@@ -228,4 +243,10 @@
   @media (max-width: $tabletWidth) {
     display: none;
   }
+}
+
+.services__button {
+  @include text-reset;
+  background: none;
+  border: none;
 }

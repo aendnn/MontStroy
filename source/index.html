@@ -14,12 +14,11 @@
     <header class="page-header">
       <div class="page-header__container container">
         <div class="page-header__wrap">
-          <a class="page-header__logo logotype" href="#">
+          <a class="page-header__logo logotype" href="#" aria-label="Главная">
             <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
           </a>
           <nav class="page-header__nav main-nav">
-            <button class="main-nav__toggle" type="button">
-              Меню
+            <button class="main-nav__toggle" type="button" aria-label="Меню">
               <span class="main-nav__toggle-line"></span>
             </button>
             <ul class="main-nav__list site-nav site-nav--nojs site-nav--closed">
@@ -104,9 +103,14 @@
               </li>
             </ul>
             <div class="features__toggles toggles toggles--hidden">
-              <button class="toggles__item" type="button"></button>
-              <button class="toggles__item toggles__item--active" type="button"></button>
-              <button class="toggles__item" type="button"></button>
+              <button class="toggles__item" type="button" aria-label="Предыдущий слайд">
+              </button>
+              <button class="toggles__item toggles__item--active" type="button" aria-label="Текущий слайд">
+                <span class="visually-hidden">2 слайд</span>
+              </button>
+              <button class="toggles__item" type="button" aria-label="Следующий слайд">
+                <span class="visually-hidden">3 слайд</span>
+              </button>
             </div>
           </div>
         </div>
@@ -121,9 +125,11 @@
               <article class="services__item services__item--active">
                 <h3 class="services__item-title">
                   Проектирование
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
@@ -147,7 +153,7 @@
                     class="services__separator">;</span></span>
                   </a>
                   <a class="services__item-link" href="#">
-                    <span>Обеспечение авторского надзора на протяжении всего строительства <span
+                    <span>Обеспечение авторского надзора<br>на протяжении всего строительства <span
                     class="services__text-hidden">(контроль за соблюдением всех норм и&nbsp;проектных разработок).</span></span>
                   </a>
                 </div>
@@ -157,9 +163,11 @@
               <article class="services__item">
                 <h3 class="services__item-title">
                   Инженерные изыскания
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
@@ -201,9 +209,11 @@
               <article class="services__item">
                 <h3 class="services__item-title">
                   Строительно-монтажные работы
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
@@ -237,9 +247,11 @@
                 <h3 class="services__item-title">
                   Эксплуатация и сервисное
                   обслуживание
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
@@ -272,9 +284,11 @@
               <article class="services__item">
                 <h3 class="services__item-title">
                   Электролаборатория
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
@@ -310,9 +324,11 @@
                 <h3 class="services__item-title">
                   Услуги по технологическому
                   присоединению
-                  <svg class="services__icon" width="8" height="5">
-                    <use xlink:href="img/sprite_auto.svg#icon-select"></use>
-                  </svg>
+                  <button class="services__button" type="button">
+                    <svg class="services__icon" width="8" height="5">
+                      <use xlink:href="img/sprite_auto.svg#icon-select"></use>
+                    </svg>
+                  </button>
                 </h3>
                 <div class="services__links">
                   <a class="services__item-link" href="#">
