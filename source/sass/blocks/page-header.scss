@@ -17,11 +17,11 @@
 .page-header__wrap {
   @include space-between;
   align-items: center;
-  width: 48.8%;
+  width: 49%;
 
   @media (max-width: $tabletWidth) {
     justify-content: flex-start;
-    width: 24.4%;
+    width: 25%;
   }
 
   @media (max-width: $mobileWidth) {
@@ -57,10 +57,10 @@
 }
 
 .page-header__nav {
-  width: 64.9%;
+  width: 65%;
 
   @media (max-width: $tabletWidth) {
-    width: 32px;
+    width: 35px;
     height: 22px;
   }
 
@@ -71,7 +71,7 @@
 }
 
 .page-header__connection {
-  width: 31.7%;
+  width: 32%;
 
   @media (max-width: $tabletWidth) {
     width: auto;

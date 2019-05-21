@@ -81,7 +81,7 @@
 
     &::before {
       top: -50px;
-      max-height: 515px;
+      height: 80%;
       background-image: url("../img/header-bg-mob.jpg");
     }
 
@@ -97,7 +97,6 @@
   @media (max-width: $tabletWidth) {
     padding: 0 42px;
   }
-
 
   @media (max-width: $mobileWidth) {
     padding: 0;
@@ -194,13 +193,13 @@
     order: 1;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     padding: 0;
   }
 }
 
 .banner__btn {
-  min-width: 48.3%;
+  min-width: 48%;
   margin-bottom: 13px;
 
   @media (max-width: $mobileWidth) {

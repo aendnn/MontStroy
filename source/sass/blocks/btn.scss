@@ -16,7 +16,7 @@
   }
 
   &--transparent {
-    color: #97fff4;
+    color: $mainColor;
     background-color: transparent;
   }
 
@@ -31,8 +31,6 @@
     &:focus {
       box-shadow: 0 2px 5px 0 rgba(0, 255, 215, 0.6);
     }
-
-
   }
 
   @media (max-width: $tabletWidth) {

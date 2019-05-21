@@ -19,12 +19,27 @@
     transform: translateY(-50%);
     background-color: $secondaryColor;
   }
-}
 
+  @media (max-width: $tabletWidth) {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 1px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
 
 .title__wrap {
   display: inline-block;
   min-width: 300px;
+  padding-right: 100px;
   position: relative;
   z-index: 2;
   background-color: $mainColor;

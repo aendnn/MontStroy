@@ -4,7 +4,16 @@
 
   &:hover,
   &:focus {
-    border-color: $thirdColor;
+    background-image: url("../img/footer-logo.png");
+    background-repeat: no-repeat;
+
+    .logotype__img {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-size: 86px 37px;
   }
 }
 

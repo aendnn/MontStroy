@@ -4,7 +4,7 @@
   align-items: baseline;
 
   @media (max-width: $tabletWidth) {
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   @media (max-width: $tabletWidth) {
@@ -40,15 +40,16 @@
   }
 
   @media (max-width: $tabletWidth) {
-    width: 30.7%;
+    width: 31%;
     padding: 25px 10px;
     padding-bottom: 35px;
     box-shadow: $shadowItem;
 
     &--active {
-      width: 38.6%;
-      padding: 40px 15px;
+      width: 38%;
+      padding: 0 15px;
       padding-top: 50px;
+      padding-bottom: 42px;
       box-shadow: $shadowItemActive;
     }
 
@@ -89,7 +90,6 @@
     fill: #b2b2b2;
   }
 }
-
 
 .features__toggles {
   @media (max-width: $tabletWidth) {
