@@ -4,7 +4,7 @@
   align-items: baseline;
 
   @media (max-width: $tabletWidth) {
-    padding-top: 42px;
+    padding-top: 41px;
   }
 
   @media (max-width: $tabletWidth) {
@@ -62,7 +62,7 @@
     &--active .features__icon {
       width: 89px;
       height: 59px;
-      margin-bottom: 13px;
+      margin-bottom: 12px;
       fill: #000000;
     }
   }

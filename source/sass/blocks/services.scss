@@ -5,7 +5,7 @@
   @media (max-width: $tabletWidth) {
     overflow: hidden;
     padding-top: 42px;
-    padding-bottom: 220px;
+    padding-bottom: 223px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -21,7 +21,7 @@
   margin-bottom: 21px;
 
   @media (max-width: $tabletWidth) {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -41,7 +41,7 @@
 .services__links {
   @media (max-width: $tabletWidth) {
     position: absolute;
-    top: 97%;
+    top: 100%;
     left: 0;
     z-index: 1;
     display: none;
@@ -62,7 +62,7 @@
     width: 49%;
     display: flex;
     min-height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -83,7 +83,7 @@
   min-height: 495px;
   padding: 40px;
   padding-right: 41px;
-  padding-top: 30px;
+  padding-top: 31px;
   box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
 
   @media (max-width: $tabletWidth) {
@@ -105,6 +105,7 @@
 
       .services__links {
         display: block;
+        width: 100%;
       }
     }
   }
@@ -145,7 +146,9 @@
     margin-bottom: 0;
     align-items: center;
     width: 100%;
-    padding: 5px 20px;
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     background-color: #f4f4f4;
     font-size: 14px;
     line-height: 19px;
@@ -161,6 +164,8 @@
   }
 
   @media (max-width: $mobileWidth) {
+    min-height: 49px;
+    padding-top: 4px;
     letter-spacing: 0;
     background-color: #f4f4f4;
     border: 1px solid transparent;
@@ -179,6 +184,10 @@
     border-bottom: 1px solid transparent;
   }
 
+  br {
+    display: none;
+  }
+
   &:hover span,
   &:focus span {
     border-color: #303030;
@@ -186,11 +195,15 @@
 
   @media (max-width: $tabletWidth) {
     position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
-    min-height: 48px;
+    min-height: 46px;
     margin-bottom: 0;
     background-color: #f4f4f4;
-    padding: 15px 20px;
+    padding: 0 20px;
+    padding-top: 9px;
+    padding-bottom: 6px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
@@ -210,11 +223,18 @@
     &:focus span {
       border-color: transparent;
     }
+
+    br {
+      display: block;
+    }
   }
 
   @media (max-width: $mobileWidth) {
-    padding: 12px 20px;
+    min-height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-size: 12px;
+    line-height: 14px;
     background-color: $mainColor;
 
     &:hover,

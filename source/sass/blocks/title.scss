@@ -43,4 +43,9 @@
   position: relative;
   z-index: 2;
   background-color: $mainColor;
+
+  @media (max-width: $tabletWidth) {
+    min-width: auto;
+    padding-right: 0;
+  }
 }
