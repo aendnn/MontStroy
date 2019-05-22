@@ -9,7 +9,7 @@
   </head>
   <body>
     <div style="display: none">
-      <object data="build/img/sprite_auto.svg"></object>
+      <!--<object data="build/img/sprite_auto.svg"></object>-->
     </div>
     <header class="page-header">
       <div class="page-header__container container">
@@ -82,7 +82,7 @@
             <ul class="features__list">
               <li class="features__item">
                 <svg class="features__icon" width="62" height="64">
-                  <use xlink:href="img/sprite_auto.svg#icon-like"></use>
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 <p class="features__desc">Гарантированное высокое<br>
                   качество продукции</p>
@@ -357,10 +357,116 @@
           </ul>
         </div>
       </section>
+      <section class="projects">
+        <div class="projects__container container">
+          <h2 class="projects__title title">
+            <span class="title__wrap">Проекты</span>
+          </h2>
+          <ul class="projects__list">
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-1-mob.jpg 1x, img/project-1-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-1-tabl.jpg 1x, img/project-1-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-1-desk.jpg" srcset="img/project-1-desk@2x.jpg 2x" alt="Стадион «Футур»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">Стадион «Футур»</h3>
+                <p class="projects__item-desc">В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-2-mob.jpg 1x, img/project-2-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-2-tabl.jpg 1x, img/project-2-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-2-desk.jpg" srcset="img/project-2-desk@2x.jpg 2x" alt="Бизнес-центр «Ореол»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">Бизнес-центр «Ореол»</h3>
+                <p class="projects__item-desc">Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-3-mob.jpg 1x, img/project-3-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-3-tabl.jpg 1x, img/project-3-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-3-desk.jpg" srcset="img/project-3-desk@2x.jpg 2x" alt="Кинотеатр «Семейный»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">Кинотеатр «Семейный»</h3>
+                <p class="projects__item-desc">Специалисты выполнили комплекс работ по системам  учета электроэнергии</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-4-mob.jpg 1x, img/project-4-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-4-tabl.jpg 1x, img/project-4-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-4-desk.jpg" srcset="img/project-4-desk@2x.jpg 2x" alt="ТК «Medial»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">ТК «Medial»</h3>
+                <p class="projects__item-desc">В целях обеспечения электроэнергией телевизионного комплекса  было осуществлено строительство распределительной сети мощностью 20кВ</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-5-mob.jpg 1x, img/project-5-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-5-tabl.jpg 1x, img/project-5-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-5-desk.jpg" srcset="img/project-5-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">ОАО «ЭнергоНацКомпани»</h3>
+                <p class="projects__item-desc">Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы
+                  и&nbsp;оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО «ЭнергоНацКомпани»</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="projects__wrap">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/project-6-mob.jpg 1x, img/project-6-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/project-6-tabl.jpg 1x, img/project-6-tabl@2x.jpg 2x">
+                <img class="projects__img" src="img/project-6-desk.jpg" srcset="img/project-6-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+              </picture>
+              <div class="projects__item">
+                <h3 class="projects__item-title">Театр «Буратино»</h3>
+                <p class="projects__item-desc">Специалистами  были проведены комплексные<br> электро-монтажные и пуско-наладочные работы по механизации сценических подъемников в здании театра</p>
+                <a class="projects__item-link arrow arrow--projects" href="#" aria-label="Перейти на страницу проекта">
+                  <svg class="projects__arrow" width="16" height="6">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <script src="js/script.js">
-    </script>
+    <script src="js/script.js"></script>
     <script src="js/svg4everybody.min.js"></script>
+    <script src="js/picturefill.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>

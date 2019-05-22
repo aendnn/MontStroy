@@ -1,6 +1,6 @@
 .services {
   padding-top: 100px;
-  padding-bottom: 65px;
+  padding-bottom: 57px;
 
   @media (max-width: $tabletWidth) {
     overflow: hidden;
@@ -187,9 +187,10 @@
   @media (max-width: $tabletWidth) {
     position: relative;
     width: 100%;
+    min-height: 48px;
     margin-bottom: 0;
     background-color: #f4f4f4;
-    padding: 12px 20px;
+    padding: 15px 20px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;

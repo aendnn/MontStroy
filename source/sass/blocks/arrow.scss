@@ -1,0 +1,34 @@
+.arrow {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: $mainColor;
+  border: 2px solid $secondaryColor;
+  transition: background-color 0.3s ease-in-out;
+
+  svg {
+    fill: $secondaryColor;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $thirdColor;
+    background-color: $thirdColor;
+
+    svg {
+      fill: #595959;
+    }
+  }
+
+  &--projects {
+    width: 46px;
+    height: 34px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.34);
+
+
+    svg {
+      fill: rgba(255, 255, 255, 0.34);
+    }
+  }
+}
