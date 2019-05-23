@@ -1,5 +1,13 @@
 .projects {
-  padding-bottom: 120px;
+  padding-bottom: 110px;
+
+  @media (max-width: $tabletWidth) {
+    padding-bottom: 74px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-bottom: 37px;
+  }
 }
 
 .projects__list {
