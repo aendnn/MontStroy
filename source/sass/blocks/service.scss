@@ -1,0 +1,255 @@
+.service {
+  @media (max-width: $tabletWidth) {
+    position: relative;
+    display: flex;
+    min-height: auto;
+    margin-bottom: 11px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    flex-direction: column;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--active {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.service__links {
+  @media (max-width: $tabletWidth) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  @media (max-width: $mobileWidth) {
+    top: 0;
+    position: relative;
+  }
+}
+
+
+.service__wrap {
+  min-height: 495px;
+  padding: 40px;
+  padding-right: 41px;
+  padding-top: 31px;
+  box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: $tabletWidth) {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+
+    &--active {
+      .service__title {
+        background-color: #d7d7d7;
+      }
+
+      svg {
+        fill: $secondaryColor;
+      }
+
+      .service__links {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    flex-direction: column;
+
+    &--active {
+      .service__title {
+        background-color: #e8e8e8;
+      }
+
+      .service__links {
+        min-height: auto;
+      }
+    }
+  }
+}
+
+.service__title {
+  @include text-reset;
+  display: block;
+  min-height: 28px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  color: $secondaryColor;
+
+  @media (max-width: $tabletWidth) {
+    @include space-between;
+    position: relative;
+    min-height: 50px;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      z-index: 2;
+      border-color: $thirdColor;
+      box-shadow: $mainShadow;
+    }
+
+    &:hover .service__icon,
+    &:focus .service__icon {
+      fill: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    min-height: 49px;
+    padding-top: 4px;
+    letter-spacing: 0;
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+  }
+}
+
+.service__link {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  margin-bottom: 14px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #303030;
+
+  span {
+    position: relative;
+    border-bottom: 1px solid transparent;
+
+    &::before {
+      content: ";";
+      position: absolute;
+      right: -4px;
+      bottom: -1px;
+      font-size: 13px;
+      line-height: 16px;
+      color: #303030;
+    }
+  }
+
+  br {
+    display: none;
+  }
+
+  &:hover span,
+  &:focus span {
+    border-color: #303030;
+  }
+
+  &:last-of-type span::before {
+    content: ".";
+  }
+
+  @media (max-width: $tabletWidth) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 46px;
+    margin-bottom: 0;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $secondaryColor;
+    border: 1px solid transparent;
+    border-bottom-color: #e8e8e8;
+
+    &:hover,
+    &:focus {
+      position: relative;
+      z-index: 1;
+      border-color: $thirdColor;
+      box-shadow: 0 0 10px 0 rgba(0, 255, 215, 0.65);
+    }
+
+    &:hover span,
+    &:focus span {
+      border-color: transparent;
+    }
+
+    br {
+      display: block;
+    }
+
+    span::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    min-height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: $mainColor;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: #e8e8e8;
+    }
+  }
+}
+
+.service__icon {
+  display: none;
+
+  @media (max-width: $tabletWidth) {
+    display: block;
+    min-width: 8px;
+    margin-left: auto;
+    fill: #aeadad;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+.service__button {
+  @include text-reset;
+  background: none;
+  border: none;
+}
+
+.service__text-hidden {
+  @media (max-width: $tabletWidth) {
+    display: none;
+  }
+}

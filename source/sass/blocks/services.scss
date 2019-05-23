@@ -25,6 +25,7 @@
   }
 
   @media (max-width: $mobileWidth) {
+    margin-bottom: 25px;
     padding-left: 20px;
   }
 }
@@ -38,22 +39,7 @@
   }
 }
 
-.services__links {
-  @media (max-width: $tabletWidth) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    display: none;
-  }
-
-  @media (max-width: $mobileWidth) {
-    top: 0;
-    position: relative;
-  }
-}
-
-.services__item-wrap {
+.services__list-service {
   width: 31%;
   margin-bottom: 45px;
 
@@ -62,7 +48,7 @@
     width: 49%;
     display: flex;
     min-height: auto;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -77,198 +63,4 @@
       margin-bottom: 0;
     }
   }
-}
-
-.services__item {
-  min-height: 495px;
-  padding: 40px;
-  padding-right: 41px;
-  padding-top: 31px;
-  box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
-
-  @media (max-width: $tabletWidth) {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    width: 100%;
-    padding: 0;
-    box-shadow: none;
-
-    &--active {
-      .services__item-title {
-        background-color: #d7d7d7;
-      }
-
-      svg {
-        fill: $secondaryColor;
-      }
-
-      .services__links {
-        display: block;
-        width: 100%;
-      }
-    }
-  }
-
-  @media (max-width: $mobileWidth) {
-    width: 100%;
-    flex-direction: column;
-
-    &--active {
-      .services__item-title {
-        background-color: #e8e8e8;
-      }
-
-      .services__links {
-        min-height: auto;
-      }
-    }
-  }
-}
-
-.services__item-title {
-  @include text-reset;
-  display: block;
-  min-height: 28px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 900;
-  text-align: left;
-  text-transform: uppercase;
-  color: $secondaryColor;
-
-  @media (max-width: $tabletWidth) {
-    @include space-between;
-    position: relative;
-    min-height: 50px;
-    flex-wrap: nowrap;
-    margin-bottom: 0;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    background-color: #f4f4f4;
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 400;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      z-index: 2;
-      border-color: $thirdColor;
-      box-shadow: $mainShadow;
-    }
-  }
-
-  @media (max-width: $mobileWidth) {
-    min-height: 49px;
-    padding-top: 4px;
-    letter-spacing: 0;
-    background-color: #f4f4f4;
-    border: 1px solid transparent;
-  }
-}
-
-.services__item-link {
-  display: inline-block;
-  width: 95%;
-  margin-bottom: 14px;
-  font-size: 13px;
-  line-height: 16px;
-  color: #303030;
-
-  span {
-    border-bottom: 1px solid transparent;
-  }
-
-  br {
-    display: none;
-  }
-
-  &:hover span,
-  &:focus span {
-    border-color: #303030;
-  }
-
-  @media (max-width: $tabletWidth) {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 46px;
-    margin-bottom: 0;
-    background-color: #f4f4f4;
-    padding: 0 20px;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    color: $secondaryColor;
-    border: 1px solid transparent;
-    border-bottom-color: #e8e8e8;
-
-    &:hover,
-    &:focus {
-      position: relative;
-      z-index: 1;
-      border-color: $thirdColor;
-      box-shadow: 0 0 10px 0 rgba(0, 255, 215, 0.65);
-    }
-
-    &:hover span,
-    &:focus span {
-      border-color: transparent;
-    }
-
-    br {
-      display: block;
-    }
-  }
-
-  @media (max-width: $mobileWidth) {
-    min-height: 40px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 12px;
-    line-height: 14px;
-    background-color: $mainColor;
-
-    &:hover,
-    &:focus {
-      border-bottom-color: #e8e8e8;
-    }
-  }
-}
-
-.services__icon {
-  display: none;
-
-  @media (max-width: $tabletWidth) {
-    display: block;
-    min-width: 8px;
-    margin-left: auto;
-    fill: #aeadad;
-
-    &:hover,
-    &:focus {
-      fill: rgba(0, 0, 0, 0.7);
-    }
-  }
-}
-
-.services__separator,
-.services__text-hidden {
-  @media (max-width: $tabletWidth) {
-    display: none;
-  }
-}
-
-.services__button {
-  @include text-reset;
-  background: none;
-  border: none;
 }
