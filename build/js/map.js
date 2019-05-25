@@ -1,4 +1,5 @@
-'use strict';
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 setTimeout(function(){
   var elem = document.createElement('script');
   elem.type = 'text/javascript';
@@ -6,8 +7,8 @@ setTimeout(function(){
   document.getElementsByTagName('body')[0].appendChild(elem);
 }, 2000);
 
-ymaps.ready(init);
-function init(){
+
+function getYaMap(){
   // Создание карты.
   var myMap = new ymaps.Map("map", {
     // Координаты центра карты.
