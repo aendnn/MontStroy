@@ -1,0 +1,56 @@
+.social {
+  @include space-between;
+
+  @media (max-width: $mobileWidth) {
+    align-items: flex-start;
+    max-width: 250px;
+  }
+}
+
+.social__link {
+  display: block;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $mainColor;
+  }
+}
+
+.social__icon {
+  transition: all 0.3s ease;
+  fill: #666666;
+
+  @media (max-width: $tabletWidth) {
+    &--vk {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--twi {
+      width: 17px;
+      height: 18px;
+    }
+
+    &--fb {
+      width: 17px;
+      height: 16px;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    &--vk {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--twi {
+      width: 30px;
+      height: 32px;
+    }
+
+    &--fb {
+      width: 31px;
+      height: 29px;
+    }
+  }
+}

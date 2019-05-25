@@ -15,8 +15,8 @@ mainToggle.addEventListener('click', function () {
 });
 
 
-var linkCon = document.querySelectorAll('[href^="#feedback"]'),
-  V = 1;
+var linkCon = document.querySelectorAll('.scroll'),
+  V = 0.3;
 for (var i = 0; i < linkCon.length; i++) {
   linkCon[i].addEventListener('click', function (e) {
     e.preventDefault();

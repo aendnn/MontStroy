@@ -1,0 +1,143 @@
+.contacts__item {
+  @include text-reset;
+  width: 95%;
+  font-size: 16px;
+  line-height: 29px;
+  background-repeat: no-repeat;
+  background-position: 0;
+
+  &--phone {
+    line-height: 16px;
+  }
+
+  a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 18px;
+    color: $mainColor;
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &:focus {
+      border-color: $mainColor;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    font-size: 14px;
+    line-height: 29px;
+
+    &--phone {
+      line-height: 21px;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    line-height: 22px;
+
+    a {
+      line-height: 24px;
+    }
+  }
+}
+
+.contacts__list {
+  display: none;
+}
+
+.contacts__icon {
+  margin-right: 20px;
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 39px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 37px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin-bottom: 16px;
+  }
+}
+
+.contacts {
+  &--mob {
+    display: none;
+  }
+
+  &--desk {
+    .contacts__icon {
+      fill: $thirdColor;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    padding-top: 25px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    display: block;
+    padding: 16px 21px;
+    padding-right: 0;
+
+    &--desk {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 18px 21px;
+      padding-bottom: 15px;
+
+      .contacts__wrap {
+        width: 210px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+      }
+    }
+
+    &--mob {
+      margin: 0;
+      padding-right: 0;
+      padding-bottom: 35px;
+
+      .contacts__icon {
+        fill: rgba(255, 255, 255, 0.5);
+      }
+
+      .contacts__item {
+        padding-left: 0;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 0.5);
+        background: none;
+
+        &--phone {
+          line-height: 22px;
+        }
+
+        a {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.contacts__note {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+
+  @media (max-width: $tabletWidth) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

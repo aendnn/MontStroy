@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MontStroy</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="//api-maps.yandex.ru">
+    <link rel="dns-prefetch" href="//api-maps.yandex.ru">
   </head>
   <body>
     <div style="display: none">
@@ -52,7 +54,7 @@
         </div>
         <div class="page-header__connection connection">
           <a class="connection__phone connection__phone--hidden" href="tel:+74954526723">+7 (495) 452-67-23</a>
-          <a class="btn btn--feedback btn--hidden connection__feedback" href="#feedback">Обратная связь</a>
+          <a class="btn btn--feedback btn--hidden connection__feedback scroll" href="#feedback">Обратная связь</a>
         </div>
       </div>
     </header>
@@ -69,8 +71,8 @@
                 выполняет полный комплекс строительно-монтажных
                 и пуско-наладочных работ по&nbsp;электроснабжению зданий и&nbsp;сооружений.</p>
               <div class="banner__buttons">
-                <a class="btn banner__btn" href="#">Наши услуги</a>
-                <a class="btn btn--transparent banner__btn" href="#">Связаться с нами</a>
+                <a class="btn banner__btn scroll" href="#services">Наши услуги</a>
+                <a class="btn btn--transparent banner__btn scroll" href="#feedback">Связаться с нами</a>
               </div>
             </div>
           </div>
@@ -113,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__container container container--services">
           <h2 class="services__title title">
             <span class="title__wrap">Услуги</span>
@@ -123,7 +125,7 @@
               <article class="service__wrap service__wrap--active">
                 <h3 class="service__title">
                   Проектирование
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -155,7 +157,7 @@
               <article class="service__wrap">
                 <h3 class="service__title">
                   Инженерные изыскания
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -193,7 +195,7 @@
               <article class="service__wrap">
                 <h3 class="service__title">
                   Строительно-монтажные работы
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -226,7 +228,7 @@
                 <h3 class="service__title">
                   Эксплуатация и сервисное
                   обслуживание
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -258,7 +260,7 @@
               <article class="service__wrap">
                 <h3 class="service__title">
                   Электролаборатория
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -291,7 +293,7 @@
                 <h3 class="service__title">
                   Услуги по технологическому
                   присоединению
-                  <button class="service__button" type="button">
+                  <button class="service__button" type="button" aria-label="Открыть/закрыть список услуг">
                     <svg class="service__icon" width="8" height="5">
                       <use xlink:href="img/sprite_auto.svg#icon-select"></use>
                     </svg>
@@ -329,7 +331,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-1-mob.jpg 1x, img/project-1-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-1-tabl.jpg 1x, img/project-1-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-1-desk.jpg" srcset="img/project-1-desk@2x.jpg 2x" alt="Стадион «Футур»">
+                <img class="project__img lazy" src="img/project-1-desk.jpg" srcset="img/project-1-desk@2x.jpg 2x" alt="Стадион «Футур»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Стадион «Футур»</h3>
@@ -345,7 +347,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-2-mob.jpg 1x, img/project-2-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-2-tabl.jpg 1x, img/project-2-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-2-desk.jpg" srcset="img/project-2-desk@2x.jpg 2x" alt="Бизнес-центр «Ореол»">
+                <img class="project__img lazy" src="img/project-2-desk.jpg" srcset="img/project-2-desk@2x.jpg 2x" alt="Бизнес-центр «Ореол»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Бизнес-центр «Ореол»</h3>
@@ -361,7 +363,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-3-mob.jpg 1x, img/project-3-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-3-tabl.jpg 1x, img/project-3-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-3-desk.jpg" srcset="img/project-3-desk@2x.jpg 2x" alt="Кинотеатр «Семейный»">
+                <img class="project__img lazy" src="img/project-3-desk.jpg" srcset="img/project-3-desk@2x.jpg 2x" alt="Кинотеатр «Семейный»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Кинотеатр «Семейный»</h3>
@@ -377,7 +379,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-4-mob.jpg 1x, img/project-4-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-4-tabl.jpg 1x, img/project-4-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-4-desk.jpg" srcset="img/project-4-desk@2x.jpg 2x" alt="ТК «Medial»">
+                <img class="project__img lazy" src="img/project-4-desk.jpg" srcset="img/project-4-desk@2x.jpg 2x" alt="ТК «Medial»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">ТК «Medial»</h3>
@@ -393,7 +395,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-5-mob.jpg 1x, img/project-5-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-5-tabl.jpg 1x, img/project-5-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-5-desk.jpg" srcset="img/project-5-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+                <img class="project__img lazy" src="img/project-5-desk.jpg" srcset="img/project-5-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">ОАО «ЭнергоНацКомпани»</h3>
@@ -410,7 +412,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/project-6-mob.jpg 1x, img/project-6-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-6-tabl.jpg 1x, img/project-6-tabl@2x.jpg 2x">
-                <img class="project__img" src="img/project-6-desk.jpg" srcset="img/project-6-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+                <img class="project__img lazy" src="img/project-6-desk.jpg" srcset="img/project-6-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Театр «Буратино»</h3>
@@ -445,22 +447,22 @@
           <ul class="partners__list">
             <li class="partners__item partners__item--active-mob">
               <a class="partners__link" href="#">
-                <img class="partners__img" src="img/company-1.png" srcset="img/company-1@2x.png 2x" alt="Ava Company">
+                <img class="partners__img lazy" src="img/company-1.png" srcset="img/company-1@2x.png 2x" alt="Ava Company">
               </a>
             </li>
             <li class="partners__item partners__item--active-desk">
               <a class="partners__link" href="#">
-                <img class="partners__img" src="img/company-2.png" srcset="img/company-2@2x.png 2x" alt="Mirror Business Center">
+                <img class="partners__img lazy" src="img/company-2.png" srcset="img/company-2@2x.png 2x" alt="Mirror Business Center">
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#">
-                <img class="partners__img" src="img/company-3.png" srcset="img/company-3@2x.png 2x" alt="Shield - охранное предприятие">
+                <img class="partners__img lazy" src="img/company-3.png" srcset="img/company-3@2x.png 2x" alt="Shield - охранное предприятие">
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#">
-                <img class="partners__img" src="img/company-4.png" srcset="img/company-4@2x.png 2x" alt="Телподомэнерг">
+                <img class="partners__img lazy" src="img/company-4.png" srcset="img/company-4@2x.png 2x" alt="Телподомэнерг">
               </a>
             </li>
           </ul>
@@ -477,9 +479,178 @@
         </div>
       </section>
     </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__title title">
+        <span class="title__wrap">
+          Контакты
+        </span>
+      </h2>
+      <div class="page-footer__map map" id="map">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/map-mob.png 1x, img/map-mob@2x.png 2x">
+          <source media="(max-width: 1199px)" srcset="img/map-tabl.png 1x, img/map-tabl@2x.png 2x">
+          <img class="map__img lazy" src="img/map-desk.png" srcset="img/map-desk@2x.png 2x" alt="Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»">
+        </picture>
+        <svg class="map__marker" width="72" height="98">
+          <use xlink:href="img/sprite_auto.svg#icon-marker"></use>
+        </svg>
+      </div>
+      <div class="page-footer__wrap">
+        <div class="page-footer__container container">
+          <div class="page-footer__secondary-info secondary-info">
+            <a class="secondary-info__logo logotype logotype--footer" href="#" aria-label="Главная">
+              <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
+            </a>
+            <span class="secondary-info__company">ЗАО «НCП «МонтCтрой»</span>
+            <ul class="secondary-info-list footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">
+                  Проекты
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">
+                  Партнеры
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="page-footer__contacts page-footer__contacts--mob contacts contacts--mob">
+              <div class="contacts__wrap">
+                <svg class="contacts__icon" width="12" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-marker"></use>
+                </svg>
+                <p class="contacts__item contacts__item--address">
+                  Варшавское шоссе,<br>
+                  д, 118, к.1 Бизнес-центр<br>
+                  «ВАРШАВКА Sky»
+                </p>
+              </div>
+              <div class="contacts__wrap">
+                <svg class="contacts__icon" width="16" height="10">
+                  <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+                </svg>
+                <p class="contacts__item contacts__item--email">
+                  <a class="contacts__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+                </p>
+              </div>
+              <div class="contacts__wrap">
+                <svg class="contacts__icon" width="13" height="11">
+                  <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+                </svg>
+                <p class="contacts__item contacts__item--phone">
+                  <a href="tel:+74954526723">+7 (495) 452-67-23</a>
+                  <span class="contacts__note">Ежедневно с 9:00 до 18:00</span>
+                </p>
+              </div>
+            </div>
+            <ul class="secondary-info__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Vk">
+                  <svg class="social__icon social__icon--vk" width="35" height="35">
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Twitter">
+                  <svg class="social__icon social__icon--twi" width="30" height="28">
+                    <use xlink:href="img/sprite_auto.svg#icon-twi"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Facebook">
+                  <svg class="social__icon social__icon--fb" width="28" height="26">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__center">
+            <section class="page-footer__feedback feedback" id="feedback">
+              <h3 class="feedback__title">Свяжитесь с нами</h3>
+              <form class="feedback__form" action="#" method="POST">
+                <div class="feedback__wrap">
+                  <div class="feedback__top">
+                    <p class="feedback__item">
+                      <label class="feedback__label" for="name">Имя</label>
+                      <input class="feedback__input" type="text" name="name" id="name">
+                    </p>
+                    <p class="feedback__item">
+                      <label class="feedback__label" for="phone">Телефон</label>
+                      <input class="feedback__input" type="tel" name="phone" id="phone" required="">
+                    </p>
+                  </div>
+                  <p class="feedback__item">
+                    <label class="feedback__label" for="email">E-mail</label>
+                    <input class="feedback__input" type="email" name="email" id="email" required="">
+                  </p>
+                  <p class="feedback__item feedback__item--margin">
+                    <label class="feedback__label feedback__label--line" for="message">Сообщение</label>
+                    <textarea class="feedback__input feedback__input--text" name="message" id="message" required=""></textarea>
+                  </p>
+                </div>
+                <p class="feedback__agreement">
+                  Заполняя форму на сайте, вы соглашаетесь с нашей
+                  <a class="feedback__confidentially" href="#">Политикой конфиденциальности</a>
+                </p>
+                <button class="feedback__submit" type="submit">Отправить</button>
+              </form>
+            </section>
+          </div>
+          <div class="page-footer__contacts contacts contacts--desk">
+            <div class="contacts__wrap">
+              <svg class="contacts__icon" width="12" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-marker"></use>
+              </svg>
+              <p class="contacts__item contacts__item--address">
+                Варшавское шоссе,<br>
+                д, 118, к.1 Бизнес-центр<br>
+                «ВАРШАВКА Sky»
+              </p>
+            </div>
+            <div class="contacts__wrap">
+              <svg class="contacts__icon" width="16" height="10">
+                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+              </svg>
+              <p class="contacts__item contacts__item--email">
+                <a class="contacts__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+              </p>
+            </div>
+            <div class="contacts__wrap">
+              <svg class="contacts__icon contacts__icon--phone" width="13" height="11">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <p class="contacts__item contacts__item--phone">
+                <a href="tel:+74954526723">+7 (495) 452-67-23</a>
+                <span class="contacts__note">Ежедневно с 9:00 до 18:00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">
+            1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/ofi.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ec1eb4b4-3ffe-4975-a696-b52dc7702801&lang=ru_RU"></script>
+    <script async="" src="js/map.js"></script>
   </body>
 </html>

@@ -1,8 +1,12 @@
 .partners {
-  padding-bottom: 125px;
+  padding-bottom: 127px;
 
   @media (max-width: $tabletWidth) {
     padding-bottom: 67px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-bottom: 27px;
   }
 }
 

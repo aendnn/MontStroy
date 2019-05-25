@@ -1,0 +1,36 @@
+.copyright {
+  padding-top: 70px;
+  padding-bottom: 45px;
+  background-color: $secondaryColor;
+
+  @media (max-width: $tabletWidth) {
+    padding: 22px 0;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #1a1a1a;
+  }
+}
+
+.copyright__text {
+  @include text-reset;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.25);
+
+  @media (max-width: $tabletWidth) {
+    line-height: 17px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+}
