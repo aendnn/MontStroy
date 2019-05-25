@@ -7,7 +7,6 @@ setTimeout(function(){
   document.getElementsByTagName('body')[0].appendChild(elem);
 }, 2000);
 
-
 function getYaMap(){
   // Создание карты.
   var myMap = new ymaps.Map("map", {

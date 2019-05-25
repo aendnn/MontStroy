@@ -8,6 +8,7 @@
 
   @media (max-width: $mobileWidth) {
     flex-direction: column;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-bottom: 0;
@@ -34,12 +35,11 @@
   }
 }
 
-
 .service__wrap {
   min-height: 495px;
   padding: 40px;
   padding-right: 41px;
-  padding-top: 31px;
+  padding-top: 32px;
   box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
 
   @media (max-width: $tabletWidth) {
@@ -211,9 +211,9 @@
   }
 
   @media (max-width: $mobileWidth) {
-    min-height: 40px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    min-height: 41px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 12px;
     line-height: 14px;
     background-color: $mainColor;

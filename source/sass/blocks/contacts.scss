@@ -33,7 +33,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    line-height: 22px;
+    line-height: 21px;
 
     a {
       line-height: 24px;
@@ -85,7 +85,7 @@
 
   @media (max-width: $mobileWidth) {
     display: block;
-    padding: 16px 21px;
+    padding: 14px 21px;
     padding-right: 0;
 
     &--desk {
@@ -98,7 +98,7 @@
       .contacts__wrap {
         width: 210px;
         margin: 0 auto;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
       }
     }
 

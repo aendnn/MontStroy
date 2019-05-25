@@ -1,6 +1,6 @@
 .feedback {
   padding-top: 45px;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
   background-color: $mainColor;
 
   @media (max-width: $tabletWidth) {
@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    padding-top: 42px;
+    padding-top: 40px;
     padding-bottom: 60px;
   }
 }
@@ -33,7 +33,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 

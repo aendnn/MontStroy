@@ -5,14 +5,14 @@
   @media (max-width: $tabletWidth) {
     overflow: hidden;
     padding-top: 42px;
-    padding-bottom: 223px;
+    padding-bottom: 220px;
   }
 
   @media (max-width: $mobileWidth) {
     min-height: auto;
     flex-direction: column;
-    padding-top: 48px;
-    padding-bottom: 55px;
+    padding-top: 45px;
+    padding-bottom: 58px;
   }
 }
 
