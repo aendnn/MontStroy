@@ -40,4 +40,5 @@ for (var i = 0; i < linkCon.length; i++) {
 }
 
 svg4everybody();
+
 objectFitImages('img');

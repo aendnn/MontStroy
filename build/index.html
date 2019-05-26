@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с 1992 года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.">
+    <meta name="keywords" content="монтстрой, строительство, проектирование, эксплуатация, сервисное обслуживание">
     <title>MontStroy</title>
     <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Robotobold.woff2" as="font" crossorigin="anonymous">
@@ -20,7 +22,10 @@
       <div class="page-header__container container">
         <div class="page-header__wrap">
           <a class="page-header__logo logotype" href="#" aria-label="Главная">
-            <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+              <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
+            </picture>
           </a>
           <nav class="page-header__nav main-nav">
             <button class="main-nav__toggle" type="button" aria-label="Меню">
@@ -332,9 +337,12 @@
           <ul class="projects__list">
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-1-mob.webp 1x, img/project-1-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-1-tabl.webp 1x, img/project-1-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-1-desk.webp 1x, img/project-1-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-1-mob.jpg 1x, img/project-1-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-1-tabl.jpg 1x, img/project-1-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-1-desk.jpg" srcset="img/project-1-desk@2x.jpg 2x" alt="Стадион «Футур»">
+                <img class="project__img" src="img/project-1-desk.jpg" srcset="img/project-1-desk@2x.jpg 2x" alt="Стадион «Футур»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Стадион «Футур»</h3>
@@ -348,9 +356,12 @@
             </li>
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-2-mob.webp 1x, img/project-2-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-2-tabl.webp 1x, img/project-2-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-2-desk.webp 1x, img/project-2-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-2-mob.jpg 1x, img/project-2-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-2-tabl.jpg 1x, img/project-2-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-2-desk.jpg" srcset="img/project-2-desk@2x.jpg 2x" alt="Бизнес-центр «Ореол»">
+                <img class="project__img" src="img/project-2-desk.jpg" srcset="img/project-2-desk@2x.jpg 2x" alt="Бизнес-центр «Ореол»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Бизнес-центр «Ореол»</h3>
@@ -364,9 +375,12 @@
             </li>
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-3-mob.webp 1x, img/project-3-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-3-tabl.webp 1x, img/project-3-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-3-desk.webp 1x, img/project-3-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-3-mob.jpg 1x, img/project-3-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-3-tabl.jpg 1x, img/project-3-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-3-desk.jpg" srcset="img/project-3-desk@2x.jpg 2x" alt="Кинотеатр «Семейный»">
+                <img class="project__img" src="img/project-3-desk.jpg" srcset="img/project-3-desk@2x.jpg 2x" alt="Кинотеатр «Семейный»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Кинотеатр «Семейный»</h3>
@@ -380,9 +394,12 @@
             </li>
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-4-mob.webp 1x, img/project-4-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-4-tabl.webp 1x, img/project-4-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-4-desk.webp 1x, img/project-4-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-4-mob.jpg 1x, img/project-4-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-4-tabl.jpg 1x, img/project-4-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-4-desk.jpg" srcset="img/project-4-desk@2x.jpg 2x" alt="ТК «Medial»">
+                <img class="project__img" src="img/project-4-desk.jpg" srcset="img/project-4-desk@2x.jpg 2x" alt="ТК «Medial»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">ТК «Medial»</h3>
@@ -396,9 +413,12 @@
             </li>
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-5-mob.webp 1x, img/project-5-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-5-tabl.webp 1x, img/project-5-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-5-desk.webp 1x, img/project-5-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-5-mob.jpg 1x, img/project-5-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-5-tabl.jpg 1x, img/project-5-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-5-desk.jpg" srcset="img/project-5-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+                <img class="project__img" src="img/project-5-desk.jpg" srcset="img/project-5-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">ОАО «ЭнергоНацКомпани»</h3>
@@ -413,9 +433,12 @@
             </li>
             <li class="projects__wrap project">
               <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/project-6-mob.webp 1x, img/project-6-mob@2x.webp 2x">
+                <source media="(max-width: 1199px)" type="image/webp" srcset="img/project-6-tabl.webp 1x, img/project-6-tabl@2x.webp 2x">
+                <source type="image/webp" srcset="img/project-6-desk.webp 1x, img/project-6-desk@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/project-6-mob.jpg 1x, img/project-6-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/project-6-tabl.jpg 1x, img/project-6-tabl@2x.jpg 2x">
-                <img class="project__img lazy" src="img/project-6-desk.jpg" srcset="img/project-6-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
+                <img class="project__img" src="img/project-6-desk.jpg" srcset="img/project-6-desk@2x.jpg 2x" alt="ОАО «ЭнергоНацКомпани»">
               </picture>
               <div class="project__wrap">
                 <h3 class="project__title">Театр «Буратино»</h3>
@@ -450,22 +473,34 @@
           <ul class="partners__list">
             <li class="partners__item partners__item--active-mob">
               <a class="partners__link" href="#">
-                <img class="partners__img lazy" src="img/company-1.png" srcset="img/company-1@2x.png 2x" alt="Ava Company">
+                <picture>
+                  <source type="image/webp" srcset="img/company-1.webp 1x, img/company-1@2x.webp 2x">
+                  <img class="partners__img" src="img/company-1.png" srcset="img/company-1@2x.png 2x" alt="Ava Company">
+                </picture>
               </a>
             </li>
             <li class="partners__item partners__item--active-desk">
               <a class="partners__link" href="#">
-                <img class="partners__img lazy" src="img/company-2.png" srcset="img/company-2@2x.png 2x" alt="Mirror Business Center">
+                <picture>
+                  <source type="image/webp" srcset="img/company-2.webp 1x, img/company-2@2x.webp 2x">
+                  <img class="partners__img" src="img/company-2.png" srcset="img/company-2@2x.png 2x" alt="Mirror Business Center">
+                </picture>
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#">
-                <img class="partners__img lazy" src="img/company-3.png" srcset="img/company-3@2x.png 2x" alt="Shield - охранное предприятие">
+                <picture>
+                  <source type="image/webp" srcset="img/company-3.webp 1x, img/company-3@2x.webp 2x">
+                  <img class="partners__img" src="img/company-3.png" srcset="img/company-3@2x.png 2x" alt="Shield - охранное предприятие">
+                </picture>
               </a>
             </li>
             <li class="partners__item">
               <a class="partners__link" href="#">
-                <img class="partners__img lazy" src="img/company-4.png" srcset="img/company-4@2x.png 2x" alt="Телподомэнерг">
+                <picture>
+                  <source type="image/webp" srcset="img/company-4.webp 1x, img/company-4@2x.webp 2x">
+                  <img class="partners__img" src="img/company-4.png" srcset="img/company-4@2x.png 2x" alt="Телподомэнерг">
+                </picture>
               </a>
             </li>
           </ul>
@@ -490,9 +525,12 @@
       </h2>
       <div class="page-footer__map map" id="map">
         <picture>
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
+          <source media="(max-width: 1199px)" type="image/webp" srcset="img/map-tabl.webp 1x, img/map-tabl@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-desk.webp 1x, img/map-desk@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/map-mob.png 1x, img/map-mob@2x.png 2x">
           <source media="(max-width: 1199px)" srcset="img/map-tabl.png 1x, img/map-tabl@2x.png 2x">
-          <img class="map__img lazy" src="img/map-desk.png" srcset="img/map-desk@2x.png 2x" alt="Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»">
+          <img class="map__img" src="img/map-desk.png" srcset="img/map-desk@2x.png 2x" alt="Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»">
         </picture>
         <svg class="map__marker" width="72" height="98">
           <use xlink:href="img/sprite_auto.svg#icon-marker"></use>
@@ -502,7 +540,10 @@
         <div class="page-footer__container container">
           <div class="page-footer__secondary-info secondary-info">
             <a class="secondary-info__logo logotype logotype--footer" href="#" aria-label="Главная">
-              <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+                <img class="logotype__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="МонтСтрой">
+              </picture>
             </a>
             <span class="secondary-info__company">ЗАО «НCП «МонтCтрой»</span>
             <ul class="secondary-info-list footer-list">
