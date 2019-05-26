@@ -14,13 +14,6 @@
   <style>.cls-1{fill:#fff}</style><style>.cls-1{fill:#fff}</style>
     <style>
       .cls-1 {
-        fill: #00ffd7;
-        fill-rule: evenodd;
-      }
-    </style>
-  
-    <style>
-      .cls-1 {
       fill: #666;
       fill-rule: evenodd;
       filter: url(#filter);
@@ -49,7 +42,6 @@
   </rdf:RDF>
 </x:xmpmeta>
 <?xpacket end="w"?></metadata>
-
   <path id="&#x438;&#x43A;&#x43E;&#x43D;&#x43A;&#x430;_&#x433;&#x435;&#x43E;&#x43B;&#x43E;&#x43A;&#x430;&#x446;&#x438;&#x44F;" data-name="&#x438;&#x43A;&#x43E;&#x43D;&#x43A;&#x430; &#x433;&#x435;&#x43E;&#x43B;&#x43E;&#x43A;&#x430;&#x446;&#x438;&#x44F;" class="cls-1" d="M524.786,3425a5.988,5.988,0,0,0-5.677,7.12h0s0.009,0.06.04,0.18a5.691,5.691,0,0,0,.4,1.19,17.283,17.283,0,0,0,5.113,6.38,0.522,0.522,0,0,0,.666,0,17.333,17.333,0,0,0,5.116-6.38,5.773,5.773,0,0,0,.4-1.19c0.028-.12.04-0.19,0.04-0.19h0A5.983,5.983,0,0,0,524.786,3425Zm0.213,8.96a2.91,2.91,0,1,1,2.914-2.91A2.916,2.916,0,0,1,525,3433.96Z" transform="translate(-519 -3425)"/>
 </symbol><symbol id="icon-phone" viewBox="0 0 13.03 11.94">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>

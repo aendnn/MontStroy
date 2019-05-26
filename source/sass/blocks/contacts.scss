@@ -75,12 +75,26 @@
 
   &--desk {
     .contacts__icon {
-      fill: $thirdColor;
+      fill: #36a79b;
+
+      &--color {
+        fill: #41cdb7;
+      }
     }
   }
 
   @media (max-width: $tabletWidth) {
     padding-top: 25px;
+
+    &--desk {
+      .contacts__icon {
+        fill: #00ceb9;
+
+        &--color {
+          fill: $thirdColor;
+        }
+      }
+    }
   }
 
   @media (max-width: $mobileWidth) {
