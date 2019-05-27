@@ -44,7 +44,7 @@ svg4everybody();
 objectFitImages('img');
 
 
-var swiper = new Swiper('.swiper-container', {
+var partnersSwiper = new Swiper('.swiper-container', {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
