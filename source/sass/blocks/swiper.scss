@@ -23,6 +23,10 @@
   @media (max-width: $tabletWidth) {
     min-height: 235px;
   }
+
+  @media (max-width: $mobileWidth) {
+    min-height: auto;
+  }
 }
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
