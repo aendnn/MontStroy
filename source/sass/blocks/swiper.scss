@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -623,7 +625,7 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
-.swiper-wrapper .swiper-slide-duplicate-active {
+.swiper-wrapper .swiper-slide-active {
   @media (max-width: $tabletWidth) {
       width: 38%;
       box-shadow: $shadowItemActive;
@@ -638,4 +640,17 @@ button.swiper-pagination-bullet {
         height: 119px;
     }
   }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    box-shadow: none;
+      a {
+        padding: 12px;
+      }
+
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
 }

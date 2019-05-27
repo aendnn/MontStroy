@@ -59,7 +59,6 @@
   align-items: center;
 
   @media (max-width: $tabletWidth) {
-    justify-content: center;
     margin-bottom: 8px;
   }
 
@@ -146,5 +145,6 @@
 
 .partners__img {
   object-fit: cover;
+  /* stylelint-disable-next-line*/
   font-family: "object-fit: cover;";
 }

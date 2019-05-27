@@ -48,10 +48,6 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
-  pagination: {
-    el: '.partners__toggles',
-    clickable: true,
-  },
   navigation: {
     nextEl: '.arrow--next',
     prevEl: '.arrow--prev',
@@ -61,7 +57,23 @@ var swiper = new Swiper('.swiper-container', {
       spaceBetween: 0,
       slidesPerView: 'auto',
       slidesPerGroup: 3,
-      centeredSlides: true
+      initialSlide: 2,
+      centeredSlides: true,
+      pagination: {
+        el: '.partners__toggles',
+        clickable: true,
+        dynamicBullets: true
+      },
+    },
+    768: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: false,
+      initialSlide: 1,
+      centeredSlides: false,
+      pagination: {
+        dynamicBullets: true,
+      },
     }
   }
 });
