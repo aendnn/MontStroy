@@ -21,7 +21,7 @@
   z-index: 1;
 
   @media (max-width: $tabletWidth) {
-    min-height: 240px;
+    min-height: 235px;
   }
 }
 .swiper-container-no-flexbox .swiper-slide {
@@ -388,7 +388,7 @@ button.swiper-pagination-bullet {
   top: 0;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #ffffff;
+  background: $thirdColor;
 }
 .swiper-pagination-progressbar.swiper-pagination-white {
   background: rgba(255, 255, 255, 0.25);

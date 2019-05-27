@@ -52,6 +52,11 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.arrow--next',
     prevEl: '.arrow--prev',
   },
+  pagination: {
+    el: '.partners__toggles',
+    clickable: true,
+    dynamicBullets: true,
+  },
   breakpoints: {
     1200: {
       spaceBetween: 0,
