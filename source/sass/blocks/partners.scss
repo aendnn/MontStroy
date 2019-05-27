@@ -55,6 +55,7 @@
 .partners__list {
   @include list-reset;
   @include space-between;
+  flex-wrap: nowrap;
   align-items: center;
 
   @media (max-width: $tabletWidth) {
@@ -72,32 +73,12 @@
     width: 31%;
     box-shadow: $shadowItem;
 
-    &:last-child {
-      display: none;
-    }
-
     &:first-child a {
       padding-top: 30px;
-    }
-
-    &--active-desk {
-      width: 38%;
-      box-shadow: $shadowItemActive;
-
-      a {
-        padding-top: 60px;
-        padding-bottom: 20px;
-      }
-
-      img {
-        width: 299px;
-        height: 119px;
-      }
     }
   }
 
   @media (max-width: $mobileWidth) {
-    display: none;
     width: 100%;
     box-shadow: none;
 

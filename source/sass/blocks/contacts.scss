@@ -24,6 +24,7 @@
   }
 
   @media (max-width: $tabletWidth) {
+    max-width: 170px;
     font-size: 14px;
     line-height: 29px;
 
@@ -33,6 +34,7 @@
   }
 
   @media (max-width: $mobileWidth) {
+    width: 80%;
     line-height: 21px;
 
     a {
@@ -126,6 +128,7 @@
       }
 
       .contacts__item {
+        width: 85%;
         padding-left: 0;
         line-height: 28px;
         color: rgba(255, 255, 255, 0.5);

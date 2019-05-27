@@ -42,3 +42,26 @@ for (var i = 0; i < linkCon.length; i++) {
 svg4everybody();
 
 objectFitImages('img');
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.partners__toggles',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.arrow--next',
+    prevEl: '.arrow--prev',
+  },
+  breakpoints: {
+    1200: {
+      spaceBetween: 0,
+      slidesPerView: 'auto',
+      slidesPerGroup: 3,
+      centeredSlides: true
+    }
+  }
+});
