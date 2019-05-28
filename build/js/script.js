@@ -60,6 +60,7 @@ var desktopSwiperConfig = {
 
 var desktopSwiperConfigFeatures = {
   init: false,
+  slidesPerView: 'auto',
   on: {
     resize: function () {
       if (window.matchMedia('(min-width: 1200px)').matches) { this.destroy(); }
@@ -113,7 +114,6 @@ var mobileSwiperConfig = {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
-  centeredSlides: false,
   pagination: {
     el: '.partners__toggles',
     clickable: true,
@@ -122,7 +122,7 @@ var mobileSwiperConfig = {
 
 var mobileSwiperConfigFeatures = {
   init: false,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   loop: true,
   spaceBetween: 0,
   pagination: {

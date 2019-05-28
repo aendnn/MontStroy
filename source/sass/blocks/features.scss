@@ -16,7 +16,9 @@
   }
 
   @media (max-width: $mobileWidth) {
+    margin-bottom: 8px;
     padding-top: 43px;
+    padding-bottom: 0;
   }
 }
 
@@ -34,20 +36,15 @@
   }
 }
 
-.features__item {
+.features__wrap {
   display: flex;
   flex-direction: column;
-  width: 20%;
-
-  @media (min-width: 1920px) {
-    width: 17%;
-  }
 
   @media (max-width: $tabletWidth) {
-    box-sizing: border-box;
-    width: 228px;
-    padding: 25px 10px;
+    min-height: 177px;
+    padding: 32px 10px;
     padding-bottom: 35px;
+    background-color: $mainColor;
     box-shadow: $shadowItem;
   }
 
@@ -71,41 +68,63 @@
 
 .features__toggles {
   @media (max-width: $tabletWidth) {
-    width: 5%;
-    max-width: 140px;
+    width: 7%;
     margin: 0 auto;
   }
 
   @media (max-width: $mobileWidth) {
-    width: 11%;
+    width: 15%;
   }
 }
 
-.features .swiper-slide-active {
+.features .swiper-slide {
+  min-height: 197px;
+  width: 20%;
+
+  @media (min-width: 1920px) {
+    width: 17%;
+  }
+
   @media (max-width: $tabletWidth) {
-      width: 280px;
-      padding: 0 15px;
-      padding-top: 47px;
-      padding-bottom: 42px;
-      box-shadow: $shadowItemActive;
+    box-sizing: border-box;
+    width: 32%;
+    min-width: 245px;
+    min-height: 177px;
 
-    .features__desc {
-      font-size: 14px;
-      line-height: 20px;
-      color: #000000;
-    }
+    &-active {
+      width: 40%;
 
-     .features__icon {
-      width: 89px;
-      height: 59px;
-      margin-bottom: 12px;
-      fill: #000000;
+      .features__wrap {
+        padding: 0 15px;
+        padding-top: 47px;
+        padding-bottom: 42px;
+        box-shadow: $shadowItemActive;
+
+        .features__desc {
+          font-size: 14px;
+          line-height: 20px;
+          color: #000000;
+        }
+
+        .features__icon {
+          width: 89px;
+          height: 59px;
+          margin-bottom: 12px;
+          fill: #000000;
+        }
+      }
     }
   }
 
   @media (max-width: $mobileWidth) {
-    padding: 42px 10px;
-    box-shadow: none;
-    border: 1px solid #dddddd;
+    width: 100%;
+
+    &-active {
+      .features__wrap {
+        padding: 42px 10px;
+        box-shadow: none;
+        border: 1px solid #dddddd;
+      }
+    }
   }
 }
