@@ -4,7 +4,8 @@
   }
 
   @media (max-width: $tabletWidth) {
-    @include space-between;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
@@ -12,7 +13,7 @@
 .toggles__item {
   @include text-reset;
   display: block;
-  width: 8px;
+  min-height: 8px;
   height: 8px;
   background-color: #dddddd;
   border-radius: 50%;
@@ -20,48 +21,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &--active {
-    background-color: $thirdColor;
-    cursor: default;
-  }
-
-  &:hover:not(.toggles__item--active),
-  &:focus:not(.toggles__item--active) {
-    background-color: #d6d6d6;
-  }
-
-  &--small {
-    width: 4px;
-    height: 4px;
-  }
-
-  &--partners {
-    width: 6px;
-    height: 6px;
-  }
-
   @media (max-width: $mobileWidth) {
     width: 6px;
     height: 6px;
-
-    &--small {
-      width: 4px;
-      height: 4px;
-    }
-
-    &--active,
-    &--active-mob {
-      width: 8px;
-      height: 8px;
-      border-color: $thirdColor;
-      background-color: $thirdColor;
-    }
-
-    &--default {
-      width: 6px;
-      height: 6px;
-      background-color: #dddddd;
-      border-color: #dddddd;
-    }
   }
 }

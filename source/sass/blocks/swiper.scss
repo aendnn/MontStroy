@@ -280,6 +280,11 @@
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  @media (max-width: $mobileWidth) {
+    width: 6px;
+    height: 6px;
+  }
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -297,6 +302,11 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   background-color: $thirdColor;
   cursor: default;
+
+  @media (max-width: $mobileWidth) {
+    width: 8px;
+    height: 8px;
+  }
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;
@@ -621,5 +631,3 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
 }
-
-

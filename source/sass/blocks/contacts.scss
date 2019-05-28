@@ -49,6 +49,14 @@
 
 .contacts__icon {
   margin-right: 20px;
+
+  @media (max-width: $tabletWidth) {
+    margin-right: 19px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin-right: 16px;
+  }
 }
 
 .contacts__wrap {
@@ -66,7 +74,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
   }
 }
 
@@ -121,7 +129,7 @@
     &--mob {
       margin: 0;
       padding-right: 0;
-      padding-bottom: 35px;
+      padding-bottom: 30px;
 
       .contacts__icon {
         fill: rgba(255, 255, 255, 0.5);
@@ -140,6 +148,12 @@
 
         a {
           color: rgba(255, 255, 255, 0.5);
+
+          &:hover,
+          &:focus {
+            border-color: transparent;
+            color: rgba(255, 255, 255, 1);
+          }
         }
       }
     }
