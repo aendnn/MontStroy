@@ -11,7 +11,8 @@
  *
  * Released on: February 22, 2019
  */
-.swiper-container {
+.swiper-container,
+.swiper-container-features {
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
@@ -319,7 +320,6 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 8px;
 }
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   display: inline-block;
@@ -629,32 +629,4 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
-.swiper-wrapper .swiper-slide-active {
-  @media (max-width: $tabletWidth) {
-      width: 38%;
-      box-shadow: $shadowItemActive;
 
-      a {
-        padding-top: 60px;
-        padding-bottom: 20px;
-      }
-
-      img {
-        width: 299px;
-        height: 119px;
-    }
-  }
-
-  @media (max-width: $mobileWidth) {
-    width: 100%;
-    box-shadow: none;
-      a {
-        padding: 12px;
-      }
-
-      img {
-        width: auto;
-        height: auto;
-      }
-    }
-}

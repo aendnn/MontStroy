@@ -69,7 +69,7 @@
 
 .partners__item {
   @media (max-width: $tabletWidth) {
-    width: 31%;
+    width: 34%;
     box-shadow: $shadowItem;
 
     &:first-child a {
@@ -78,27 +78,7 @@
   }
 
   @media (max-width: $mobileWidth) {
-    width: 100%;
     box-shadow: none;
-
-    &:first-of-type a {
-      padding: 12px;
-    }
-
-    &--active-mob {
-      display: block;
-    }
-
-    &--active-desk {
-      a {
-        padding: 12px;
-      }
-
-      img {
-        width: auto;
-        height: auto;
-      }
-    }
   }
 }
 
@@ -120,9 +100,7 @@
   }
 
   @media (max-width: $tabletWidth) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     padding: 44px 10px 26px;
     border: none;
   }
@@ -134,9 +112,21 @@
 }
 
 .partners__toggles {
-  width: 5%;
-  max-width: 50px;
+  width: 6%;
+  max-width: 70px;
   margin: 0 auto;
+
+  @media (max-width: $tabletWidth) {
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+      width: 6px;
+      height: 6px;
+
+      &:last-child:not(.swiper-pagination-bullet-active),
+      &:first-child:not(.swiper-pagination-bullet-active) {
+        transform: scale(.667);
+      }
+    }
+  }
 
   @media (max-width: $mobileWidth) {
     width: 14%;
@@ -147,4 +137,30 @@
   object-fit: cover;
   /* stylelint-disable-next-line*/
   font-family: "object-fit: cover;";
+}
+
+.partners .swiper-slide-active {
+  @media (max-width: $tabletWidth) {
+    width: 39%;
+    box-shadow: $shadowItemActive;
+
+    img {
+      opacity: 1;
+      width: 299px;
+      height: 119px;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    box-shadow: none;
+    a {
+      padding: 12px;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
 }
