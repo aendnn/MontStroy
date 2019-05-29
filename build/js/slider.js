@@ -35,7 +35,7 @@ var tabletSwiperConfig = {
 
 var tabletSwiperConfigFeatures = {
   init: false,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 0,
   centeredSlides: true,
   effect: 'coverflow',
