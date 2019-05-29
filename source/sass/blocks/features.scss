@@ -100,17 +100,16 @@
   }
 
   @media (max-width: $tabletWidth) {
-    width: 30%;
+    width: auto;
     box-sizing: border-box;
     min-height: 175px;
 
     &-active {
       min-height: 200px;
-      transform: scale(1.2);
 
       .features__wrap {
         padding: 0 15px;
-        padding-top: 50px;
+        padding-top: 49px;
         padding-bottom: 42px;
         box-shadow: $shadowItemActive;
 
