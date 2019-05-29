@@ -13,16 +13,6 @@ var desktopSwiperConfig = {
   },
 };
 
-var desktopSwiperConfigFeatures = {
-  init: false,
-  slidesPerView: 'auto',
-  on: {
-    resize: function () {
-      if (window.matchMedia('(min-width: 1200px)').matches) { this.destroy(); }
-    }
-  }
-};
-
 var tabletSwiperConfig = {
   init: false,
   slidesPerView: 3,
@@ -119,8 +109,6 @@ function initSwiper() {
     swiper.init();
 
     if (swiperFeatures) swiperFeatures.destroy();
-    swiperFeatures = new Swiper('.swiper-container-features', desktopSwiperConfigFeatures);
-    swiperFeatures.init();
   }
 }
 
