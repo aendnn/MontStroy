@@ -95,10 +95,6 @@
 .features .swiper-slide {
   width: 20%;
 
-  @media (min-width: 1920px) {
-    width: 17%;
-  }
-
   @media (max-width: $tabletWidth) {
     width: auto;
     box-sizing: border-box;
