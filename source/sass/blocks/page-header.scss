@@ -18,7 +18,7 @@
 .page-header__wrap {
   @include space-between;
   align-items: center;
-  width: 49%;
+  width: 65%;
 
   @media (max-width: $tabletWidth) {
     justify-content: flex-start;
@@ -58,7 +58,7 @@
 }
 
 .page-header__nav {
-  width: 65%;
+  width: 75%;
 
   @media (max-width: $tabletWidth) {
     width: 35px;
