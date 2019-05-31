@@ -211,15 +211,15 @@
   font-weight: 700;
   text-align: center;
   color: $mainColor;
-  border: none;
-  border-bottom: 2px solid transparent;
+  border: 1px solid transparent;
   background-color: $secondaryColor;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover,
   &:focus {
-    border-color: #b2b2b2;
+    border-color: $thirdColor;
+    box-shadow: $mainShadow;
   }
 
   @media (max-width: $tabletWidth) {
