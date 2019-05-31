@@ -15,62 +15,23 @@ mainToggle.addEventListener('click', function () {
   }
 });
 
-var servicesToggles = document.querySelectorAll('.service__title');
-var servicesList = document.querySelectorAll('.service__links');
+var services = [].slice.call(document.querySelectorAll('.service'));
 
-for (var toggle of servicesToggles) {
-  toggle.addEventListener('click', function () {
-    if (this.classList.contains('service__title--active')) {
-      this.classList.remove('service__title--active');
-      this.nextElementSibling.classList.remove('service__links--opened');
-      this.nextElementSibling.classList.add('service__links--closed');
-    }
-    else {
-      this.classList.add('service__title--active');
-      this.nextElementSibling.classList.remove('service__links--closed');
-      this.nextElementSibling.classList.add('service__links--opened');
-    }
-  })
-}
+services.forEach(function (service) {
+  service.addEventListener('click', function (evt) {
 
-for (var services of servicesList) {
-  document.addEventListener('click', function(event) {
-    var isClickInside = this.contains(event.target);
+    var target = evt.target;
+    var isHeading = [].slice.call(target.classList).indexOf('service__title') !== -1;
 
-    if (!isClickInside) {
-      this.classList.remove('service__links--opened');
+    if (isHeading) {
+      services.forEach(function (service) {
+        service.classList.remove('service--active');
+      });
+      this.classList.add('service--active');
     }
   });
-  services.classList.remove('service__links--nojs');
-}
-
-/*for (var services of servicesList) {
-  services.classList.remove('service__links--nojs');
-
-  if (toggle.classList.contains('service__title--active')) {
-    if (services.classList.contains('service__links--opened')) {
-      toggle.nextElementSibling.classList.remove('service__links--opened');
-      toggle.nextElementSibling.classList.add('service__links--closed');
-    }
-  }
-  else {
-    toggle.nextElementSibling.classList.add('service__links--opened');
-  }
-}
-
-/*servicesToggle.addEventListener('click', function () {
-  if (servicesList.classList.contains('service__links--closed')) {
-    servicesList.classList.remove('service__links--closed');
-    servicesList.classList.add('service__links--opened');
-    servicesIsActive.classList.add('service__wrap--active');
-  } else {
-    servicesList.classList.add('service__links--closed');
-    servicesList.classList.remove('service__links--opened');
-    servicesIsActive.classList.remove('service__wrap--active');
-  }
 });
 
-*/
 var linkCon = document.querySelectorAll('.scroll');
 var V = 0.3;
 for (var i = 0; i < linkCon.length; i++) {

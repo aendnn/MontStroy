@@ -8,19 +8,16 @@
     top: 100%;
     left: 0;
     z-index: 10;
-    flex-direction: column;
+    display: block;
     width: 27%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 
+    &--opened,
     &--nojs {
-      display: flex;
-    }
-
-    &--closed {
-      display: none;
-    }
-
-    &--opened {
-      display: flex;
+      max-height: 500px;
+      transition: max-height 0.7s ease-in-out;
     }
   }
 
@@ -53,7 +50,7 @@
 
 .site-nav__link {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;

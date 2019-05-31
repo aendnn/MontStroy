@@ -6,7 +6,6 @@ setTimeout(function () {
   document.getElementsByTagName('body')[0].appendChild(elem);
 }, 2000);
 
-
 function getYaMap() {
   var myMap = new ymaps.Map('map', {
     center: [55.63150204, 37.61708150],
@@ -20,4 +19,11 @@ function getYaMap() {
   });
 
   myMap.geoObjects.add(myPlacemark);
+
+  ymaps.ready(function () {
+    var link = document.querySelector('.ymaps-logo-link');
+    link.setAttribute("aria-label", "Наш адрес");
+    var iframe = document.querySelector('iframe');
+    iframe.setAttribute("title", "Наш адрес");
+  });
 }

@@ -3,10 +3,32 @@
     position: relative;
     display: flex;
     min-height: auto;
+
+    &--active {
+      .service__links {
+        max-height: 1000px;
+        transition: max-height 0.5s ease-in-out;
+      }
+
+      .service__title {
+        background-color: #d7d7d7;
+        transition: all 0.5s ease;
+
+        svg {
+          fill: $secondaryColor;
+        }
+      }
+    }
   }
 
   @media (max-width: $mobileWidth) {
     flex-direction: column;
+
+    &--active {
+      .service__title {
+        background-color: #e8e8e8;
+      }
+    }
   }
 }
 
@@ -20,12 +42,6 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-
-    &--nojs,
-    &--opened {
-      max-height: 1000px;
-      transition: max-height 0.5s ease-in-out;
-    }
   }
 
   @media (max-width: $mobileWidth) {
@@ -35,7 +51,7 @@
 }
 
 .service__wrap {
-  min-height: 495px;
+  min-height: 501px;
   padding: 40px;
   padding-right: 41px;
   padding-top: 32px;
@@ -53,12 +69,6 @@
   @media (max-width: $mobileWidth) {
     width: 100%;
     flex-direction: column;
-
-    &--active {
-      .service__title {
-        background-color: #e8e8e8;
-      }
-    }
   }
 }
 
@@ -77,11 +87,11 @@
   @media (max-width: $tabletWidth) {
     @include space-between;
     position: relative;
-    min-height: 50px;
+    min-height: 51px;
     flex-wrap: nowrap;
-    margin-bottom: 10px;
     align-items: center;
     width: 100%;
+    margin-bottom: 0;
     padding: 0 20px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -91,22 +101,6 @@
     font-weight: 400;
     cursor: pointer;
     transition: all 0.5s ease;
-
-    &--active {
-      background-color: #d7d7d7;
-      transition: all 0.5s ease;
-
-      svg {
-        fill: $secondaryColor;
-      }
-
-      .service__links--opened {
-        max-height: 500px;
-        overflow: visible;
-        width: 100%;
-        transition: all 0.5s ease;
-      }
-    }
 
     &:hover,
     &:focus {
@@ -123,6 +117,7 @@
 
   @media (max-width: $mobileWidth) {
     min-height: 49px;
+    margin-bottom: 10px;
     padding-top: 4px;
     letter-spacing: 0;
     background-color: #f4f4f4;
@@ -237,12 +232,6 @@
       fill: rgba(0, 0, 0, 0.7);
     }
   }
-}
-
-.service__button {
-  @include text-reset;
-  background: none;
-  border: none;
 }
 
 .service__text-hidden {

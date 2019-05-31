@@ -1,12 +1,12 @@
 .services {
   padding-top: 100px;
-  padding-bottom: 57px;
+  padding-bottom: 60px;
 
   @media (max-width: $tabletWidth) {
     position: relative;
     z-index: 5;
     padding-top: 20px;
-    padding-bottom: 223px;
+    padding-bottom: 40px;
   }
 
   @media (max-width: $mobileWidth) {
@@ -42,25 +42,22 @@
 
 .services__list-service {
   width: 31%;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @media (max-width: $tabletWidth) {
     position: relative;
     width: 49%;
     display: flex;
     min-height: auto;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $mobileWidth) {
     width: 100%;
     flex-direction: column;
+    margin-bottom: 0;
 
     &:last-child {
-      margin-bottom: 0;
-    }
-
-    &--active {
       margin-bottom: 0;
     }
   }
