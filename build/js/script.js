@@ -30,7 +30,7 @@ services.forEach(function (service) {
       });
       this.classList.toggle('service--active');
     }
-  })
+  });
 });
 
 var linkCon = document.querySelectorAll('.scroll');
