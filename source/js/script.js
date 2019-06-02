@@ -19,17 +19,18 @@ var services = [].slice.call(document.querySelectorAll('.service'));
 
 services.forEach(function (service) {
   service.addEventListener('click', function (evt) {
-
     var target = evt.target;
     var isHeading = [].slice.call(target.classList).indexOf('service__title') !== -1;
 
     if (isHeading) {
       services.forEach(function (service) {
-        service.classList.remove('service--active');
+        if (!service.contains(target)) {
+          service.classList.remove('service--active');
+        }
       });
-      this.classList.add('service--active');
+      this.classList.toggle('service--active');
     }
-  });
+  })
 });
 
 var linkCon = document.querySelectorAll('.scroll');
