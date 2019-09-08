@@ -1,0 +1,143 @@
+.features__list {
+  @include list-reset;
+  @include space-between;
+  align-items: baseline;
+
+  @media (max-width: $tabletWidth) {
+    box-sizing: border-box;
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin-bottom: 5px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.features__desc {
+  @include text-reset;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+
+  @media (max-width: $tabletWidth) {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.features__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tabletWidth) {
+    min-height: 177px;
+    padding: 32px 10px;
+    padding-bottom: 35px;
+    background-color: $mainColor;
+    box-shadow: $shadowItem;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding: 42px 10px;
+    box-shadow: none;
+    border: 1px solid #dddddd;
+  }
+}
+
+.features__icon {
+  margin: 0 auto;
+  margin-bottom: 29px;
+  fill: rgba(255, 255, 255, 0.6);
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 6px;
+    fill: #b2b2b2;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 89px;
+    height: 59px;
+    margin-bottom: 17px;
+  }
+}
+
+.features__toggles {
+  @media (max-width: $tabletWidth) {
+    position: relative;
+    top: -22px;
+    width: 7%;
+    min-height: 8px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobileWidth) {
+    position: static;
+    width: 16%;
+  }
+}
+
+.features .swiper-slide {
+  width: 20%;
+
+  @media (max-width: $tabletWidth) {
+    width: auto;
+    box-sizing: border-box;
+    min-height: 175px;
+
+    &-active {
+      min-height: 200px;
+
+      .features__wrap {
+        padding: 0 15px;
+        padding-top: 49px;
+        padding-bottom: 42px;
+        box-shadow: $shadowItemActive;
+
+        .features__desc {
+          font-size: 14px;
+          line-height: 20px;
+          color: #000000;
+        }
+
+        .features__icon {
+          width: 89px;
+          height: 59px;
+          margin-bottom: 10px;
+          fill: #000000;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+
+    &-active {
+      .features__wrap {
+        padding: 42px 10px;
+        box-shadow: none;
+        border: 1px solid #dddddd;
+
+        .features__icon {
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+}

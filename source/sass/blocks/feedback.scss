@@ -1,0 +1,234 @@
+.feedback {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  background-color: $mainColor;
+
+  @media (max-width: $tabletWidth) {
+    padding-top: 33px;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+.feedback__title {
+  @include text-reset;
+  margin-bottom: 40px;
+  font-family: $raleway;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $secondaryColor;
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin-bottom: 21px;
+  }
+}
+
+.feedback__top {
+  @include space-between;
+
+  .feedback__item {
+    width: 44%;
+  }
+
+  @media (max-width: $tabletWidth) {
+    .feedback__item {
+      width: 39%;
+      margin-bottom: 25px;
+    }
+
+    .feedback__item:last-child {
+      width: 49%;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    .feedback__item {
+      width: 42%;
+      margin-bottom: 23px;
+    }
+
+    .feedback__item:last-child {
+      width: 44%;
+    }
+  }
+}
+
+.feedback__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 69%;
+  margin-left: 75px;
+
+  @media (max-width: $tabletWidth) {
+    width: 76%;
+    margin-left: 50px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 0;
+  }
+}
+
+.feedback__item {
+  @include text-reset;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 26px;
+  }
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 29px;
+
+    &:last-of-type {
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.feedback__label {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: $secondaryColor;
+
+  &--line {
+    line-height: 37px;
+  }
+
+  @media (max-width: $tabletWidth) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.feedback__input {
+  display: block;
+  width: 100%;
+  min-height: 26px;
+  font: inherit;
+  line-height: 10px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  background-color: transparent;
+  color: $secondaryColor;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $secondaryColor;
+    outline: 0;
+  }
+
+  &--text {
+    min-height: 20px;
+    resize: vertical;
+  }
+}
+
+.feedback__agreement {
+  @include text-reset;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+
+  @media (max-width: $tabletWidth) {
+    margin-bottom: 28px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 80%;
+    margin-bottom: 33px;
+  }
+}
+
+.feedback__confidentially {
+  display: inline-block;
+  position: relative;
+  color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background-image: url("../img/dots.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.feedback__submit {
+  @include text-reset;
+  display: block;
+  width: 40%;
+  padding: 15px 30px;
+  margin: 0 auto;
+  font-family: $raleway;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: $mainColor;
+  border: 1px solid transparent;
+  background-color: $secondaryColor;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-color: $thirdColor;
+    box-shadow: $mainShadow;
+  }
+
+  @media (max-width: $tabletWidth) {
+    padding: 11px 20px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 52%;
+  }
+}

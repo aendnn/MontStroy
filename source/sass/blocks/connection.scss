@@ -1,0 +1,38 @@
+.connection {
+  @include space-between;
+  align-items: center;
+
+  @media (max-width: $tabletWidth) {
+    margin-left: auto;
+  }
+}
+
+.connection__phone {
+  display: block;
+  max-width: 160px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $secondaryColor;
+
+  &:hover,
+  &:focus {
+    color: #707070;
+  }
+
+  @media (max-width: $tabletWidth) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+.connection__feedback {
+  display: block;
+  width: 191px;
+  min-height: 44px;
+}

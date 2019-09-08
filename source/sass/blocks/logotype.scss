@@ -1,0 +1,26 @@
+.logotype[href] {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/footer-logo.png");
+    background-repeat: no-repeat;
+
+    .logotype__img {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-size: 86px 37px;
+  }
+}
+
+.logotype__img {
+  display: block;
+
+  @media (max-width: $tabletWidth) {
+    width: 86px;
+    height: 37px;
+  }
+}

@@ -1,4 +1,48 @@
-/* для проверки шрифта, после уберу */
-h1 {
-  font-family: "Roboto", "Arial", sans-serif;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background-color: $thirdColor;
+}
+
+body {
+  @include text-reset;
+  font-family: $roboto;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: $mainColor;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

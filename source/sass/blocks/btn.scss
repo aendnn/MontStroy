@@ -1,0 +1,54 @@
+.btn {
+  display: block;
+  padding: 14px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondaryColor;
+  background-color: $thirdColor;
+  border: 1px solid $thirdColor;
+
+  &:hover,
+  &:focus {
+    box-shadow: $mainShadow;
+  }
+
+  &--transparent {
+    color: $mainColor;
+    background-color: transparent;
+    border-color: #97fff4;
+  }
+
+  &--feedback {
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+    text-transform: none;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 5px 0 rgba(0, 255, 215, 0.6);
+    }
+  }
+
+  @media (max-width: $tabletWidth) {
+    font-size: 16px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding: 15px;
+  }
+}
+
+.banner__features-list {
+  @media (max-width: $tabletWidth) {
+    padding-top: 50px;
+  }
+}

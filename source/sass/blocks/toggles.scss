@@ -1,0 +1,28 @@
+.toggles {
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $tabletWidth) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.toggles__item {
+  @include text-reset;
+  display: block;
+  min-height: 8px;
+  height: 8px;
+  background-color: #dddddd;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media (max-width: $mobileWidth) {
+    width: 6px;
+    height: 6px;
+  }
+}

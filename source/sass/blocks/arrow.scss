@@ -1,0 +1,63 @@
+.arrow {
+  width: 59px;
+  height: 34px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: $mainColor;
+  border: 2px solid $secondaryColor;
+  font-size: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &--prev {
+    justify-content: flex-start;
+    border-right: none;
+
+    .arrow__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+    justify-content: flex-end;
+    border-left: none;
+  }
+
+  svg {
+    transition: all 0.3s ease;
+    fill: $secondaryColor;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #b2fff3;
+  }
+
+  &--project {
+    width: 46px;
+    height: 34px;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.34);
+
+    svg {
+      fill: rgba(255, 255, 255, 0.34);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $thirdColor;
+      background-color: $thirdColor;
+
+      svg {
+        fill: #595959;
+      }
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 50px;
+    height: 30px;
+    padding: 10px;
+  }
+}

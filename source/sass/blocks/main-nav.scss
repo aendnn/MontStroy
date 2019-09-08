@@ -1,0 +1,82 @@
+.main-nav {
+  @media (max-width: $tabletWidth) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $tabletWidth) {
+    @include text-reset;
+    display: block;
+    width: 26px;
+    height: 100%;
+    font-size: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:focus .main-nav__toggle-line,
+    &:focus .main-nav__toggle-line::before,
+    &:focus .main-nav__toggle-line::after {
+      box-shadow: 0 0 3px 1px rgba(0, 255, 216, 0.65);
+      outline: 0;
+    }
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 18px;
+  }
+}
+
+.main-nav__toggle-line {
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 26px;
+  height: 2px;
+  background-color: #afafaf;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background-color: #afafaf;
+  }
+
+  &::before {
+    top: -9px;
+  }
+
+  &::after {
+    top: 10px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    top: -1px;
+    width: 18px;
+    background-color: #959595;
+
+    &::before,
+    &::after {
+      width: 18px;
+      background-color: #959595;
+    }
+
+    &::before {
+      top: -6px;
+    }
+
+    &::after {
+      top: 5px;
+    }
+  }
+}

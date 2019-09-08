@@ -1,0 +1,80 @@
+.page-header {
+  padding-top: 19px;
+  padding-bottom: 21px;
+  background-color: #fbfbfb;
+
+  @media (max-width: $tabletWidth) {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
+}
+
+.page-header__wrap {
+  @include space-between;
+  align-items: center;
+  width: 65%;
+
+  @media (max-width: $tabletWidth) {
+    justify-content: flex-start;
+    width: 25%;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+  }
+}
+
+.page-header__container {
+  @include space-between;
+
+  @media (max-width: $tabletWidth) {
+    padding: 0 42px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding: 0;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  margin-right: 30px;
+
+  @media (max-width: $tabletWidth) {
+    width: auto;
+    height: auto;
+    margin-right: 38px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin: 0;
+  }
+}
+
+.page-header__nav {
+  width: 75%;
+
+  @media (max-width: $tabletWidth) {
+    width: 35px;
+    height: 22px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 18px;
+    height: 14px;
+  }
+}
+
+.page-header__connection {
+  width: 32%;
+
+  @media (max-width: $tabletWidth) {
+    width: auto;
+  }
+}

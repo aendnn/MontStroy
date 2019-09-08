@@ -1,0 +1,17 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $tabletWidth) {
+    width: 94%;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 88%;
+
+    &--services {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
